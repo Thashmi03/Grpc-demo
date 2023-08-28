@@ -1,0 +1,27 @@
+syntax="proto3";
+
+option go_package ="https://github.com/kiran-blockchain/hcl-golang/tree/main/go-grpc-chat";
+
+package customer;
+
+service TaskService{
+    rpc InsertCustomer(Task) returns (TaskResponse);
+    rpc GetCustomer(Empty) returns (TaskList);
+}
+
+message Task{
+    string customerid=1;
+    string name =2;
+    int32 account_id=3;
+    int32 balance=4;
+    int32 bank_id=5;
+}
+message TaskResponse{
+    string id =1;
+}
+
+message Empty{}
+
+message TaskList{
+    repeated Task customer=1;
+}

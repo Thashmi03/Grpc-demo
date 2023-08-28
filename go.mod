@@ -3,6 +3,7 @@ module Grpc-demo
 go 1.20
 
 require (
+	go.mongodb.org/mongo-driver v1.12.1
 	google.golang.org/grpc v1.57.0
 	google.golang.org/protobuf v1.31.0
 )
