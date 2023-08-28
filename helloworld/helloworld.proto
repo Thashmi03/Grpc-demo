@@ -1,0 +1,18 @@
+syntax="proto3";
+
+option go_package="https://github.com/kiran-blockchain/hcl-golang/tree/main/go-grpc-chat";
+
+package helloworld;
+
+service Greeter{
+    rpc SayHello (HelloRequest) returns (HelloResponse);
+}
+
+message HelloRequest{
+    string name=1;
+    int32 age=18;
+}
+
+message HelloResponse{
+    string message=1;
+}

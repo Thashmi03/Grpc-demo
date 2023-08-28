@@ -12,3 +12,5 @@ Steps
 2. Implement to the rpc method 
 3. Deploy it on a port 
 4. We will create a client and we will call the server method from the client.
+
+server will expose te methods and clients will access the methods
